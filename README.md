@@ -13,16 +13,20 @@
 
 > A high-dimensional property predictor framed as a pseudo-materials discovery benchmark with fake compositional (linear) and "no-more-than-X-components" (non-linear) constraints.
 
-How should you select an algorithm for a materials discovery campaign with multiple
-objectives, complex and high-dimensional structure-processing-property relationships,
-and a small adaptive design budget? Industry-relevant materials discovery tasks are
-often hierarchical, noisy, multi-fidelity, multi-objective, non-linearly correlated, and
-exhibit mixed numerical and categorical variables subject to linear and non-linear
-constraints. Examples include formulation optimization, compositional design of high
+Industry-relevant materials discovery tasks are
+often _hierarchical_, _noisy_, _multi-fidelity_, _multi-objective_, _high-dimensional_, _non-linearly correlated_, and
+exhibit _mixed numerical and categorical variables_ subject to _linear and non-linear
+constraints_. To boot, experimental iterations are usually prohibitively expensive.
+
+Examples of such materials discovery tasks include formulation optimization, compositional design of high
 entropy alloys, and multi-step synthesis. Choosing an algorithm that can expertly
-navigate such complex design spaces is a non-trivial task, and no single algorithm is
-supreme. So, how do you pair an algorithm to a design task? Here, we introduce
-PseudoCrab: a high-dimensional property predictor framed as a pseudo-materials discovery
+navigate such complex design spaces is a non-trivial task, and [no single algorithm is
+supreme](https://dx.doi.org/10.1016/j.mtcomm.2022.103440).
+
+<p align="center"> <i> So, how do you pair an algorithm with a design task? </i> </p>
+
+Here, we introduce
+`PseudoCrab`: a high-dimensional property predictor framed as a pseudo-materials discovery
 benchmark with fake compositional (linear) and "no-more-than-X-components" (non-linear)
 constraints. We apply a state-of-the-art high-dimensional Bayesian optimization
 algorithm (SAASBO) in conjunction with a multi-objective parallel Noisy Expected
@@ -30,6 +34,8 @@ Hypervolume Improvement (qNEHVI) acquisition function and compare it against oth
 high-performing models. Because PseudoCrab is customizable, researchers can adjust the
 PseudoCrab benchmark to more closely match their applications of interest during the
 algorithm downselection process prior to expensive materials discovery campaigns.
+
+Additional WIP: https://colab.research.google.com/drive/1-tSKAfYbBhYESqfi0n04NSZRJj4h9Drj?usp=sharing
 
 ## Installation
 
