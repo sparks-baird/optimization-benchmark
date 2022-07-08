@@ -9,11 +9,27 @@
 [![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter)](https://twitter.com/optimization-benchmark)
 -->
 
-# optimization-benchmark
+# optimization-benchmark (WIP)
 
 > A high-dimensional property predictor framed as a pseudo-materials discovery benchmark with fake compositional (linear) and "no-more-than-X-components" (non-linear) constraints.
 
-A longer description of your project goes here...
+How should you select an algorithm for a materials discovery campaign with multiple
+objectives, complex and high-dimensional structure-processing-property relationships,
+and a small adaptive design budget? Industry-relevant materials discovery tasks are
+often hierarchical, noisy, multi-fidelity, multi-objective, non-linearly correlated, and
+exhibit mixed numerical and categorical variables subject to linear and non-linear
+constraints. Examples include formulation optimization, compositional design of high
+entropy alloys, and multi-step synthesis. Choosing an algorithm that can expertly
+navigate such complex design spaces is a non-trivial task, and no single algorithm is
+supreme. So, how do you pair an algorithm to a design task? Here, we introduce
+PseudoCrab: a high-dimensional property predictor framed as a pseudo-materials discovery
+benchmark with fake compositional (linear) and "no-more-than-X-components" (non-linear)
+constraints. We apply a state-of-the-art high-dimensional Bayesian optimization
+algorithm (SAASBO) in conjunction with a multi-objective parallel Noisy Expected
+Hypervolume Improvement (qNEHVI) acquisition function and compare it against other
+high-performing models. Because PseudoCrab is customizable, researchers can adjust the
+PseudoCrab benchmark to more closely match their applications of interest during the
+algorithm downselection process prior to expensive materials discovery campaigns.
 
 ## Installation
 
